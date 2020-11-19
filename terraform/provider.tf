@@ -7,7 +7,7 @@ provider "aws" {
 provider "rancher2" {
   alias = "bootstrap"
 
-  api_url   = "https://rancher.server"
+  api_url   = var.api_url
   bootstrap = true
   insecure  = true
 }
@@ -15,7 +15,7 @@ provider "rancher2" {
 # Provider rancher2 post bootstrap
 provider "rancher2" {
 
-  api_url   = "https://rancher.server"
+  api_url   = var.api_url
   token_key = rancher2_bootstrap.admin.token
 	insecure  = true
 }

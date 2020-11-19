@@ -11,7 +11,7 @@
     "admin_pass": "{{ aws_secretsmanager `host/rancher/users` `admin` }}",
     "root_pass": "{{ aws_secretsmanager `host/rancher/users` `root` }}", 
     "cpus": "4",
-    "memory": "2048",
+    "memory": "8192",
     "deploy_host": "sexiboy.mgmt",
     "deploy_datastore": "VM",
     "deploy_network": "Server Network",
